@@ -8,31 +8,71 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
             margin: 0;
             padding: 20px;
         }
         h1, h2, h3 {
-            color: #333;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон для заголовков */
+            margin: 10px 0;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        li:last-child {
+            border-bottom: none;
         }
         .button {
-            background-color: #007BFF;
+            display: inline-block;
+            background-color: #28a745;
             color: white;
-            padding: 10px 15px;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 16px;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        .icon {
+            width: 100px; /* Увеличенный размер иконок */
+            height: 100px;
+            margin-right: 15px; /* Увеличенный отступ */
+            transition: transform 0.3s;
+        }
+        .icon:hover {
+            transform: scale(1.1); /* Анимация при наведении */
+        }
+        .icon_btn {
+            width: 200px; /* Увеличенный размер иконок */
+            height: 100px;
+            margin-right: 15px; /* Увеличенный отступ */
+            transition: transform 0.3s;
+        }
+        .icon_btn:hover {
+            transform: scale(1.1); /* Анимация при наведении */
         }
     </style>
 </head>
@@ -43,15 +83,15 @@
         
         <h2>Преимущества игры:</h2>
         <ul>
-            <li><strong>Легкий в освоении геймплей:</strong> Игра идеально подходит для всех возрастов!</li>
-            <li><strong>Улучшения и достижения:</strong> Прокачивайте свои навыки и открывайте новые уровни!</li>
-            <li><strong>Авто-кликеры:</strong> Автоматизируйте получение ресурсов, чтобы зарабатывать больше, даже когда вы offline!</li>
-            <li><strong>Забавная графика:</strong> Красивый и привлекательный интерфейс, который украсит ваш игровой процесс!</li>
-            <li><strong>Сохранение прогресса:</strong> Всегда сохраняйте свой прогресс и продолжайте играть на любом устройстве!</li>
+            <li><img src="easy_gameplay.png" class="icon" alt="Легкий геймплей"> <strong>Легкий в освоении геймплей:</strong> Игра идеально подходит для всех возрастов!</li>
+            <li><img src="upgrades.png" class="icon_btn" alt="Улучшения"> Прокачивайте свои навыки и открывайте новые уровни!</li>
+            <li><img src="autoclicker.png" class="icon_btn" alt="Авто-кликеры"> <strong>Авто-кликеры:</strong> Автоматизируйте получение ресурсов, чтобы зарабатывать больше, даже когда вы offline!</li>
+            <li><img src="fun_graphics.png" class="icon" alt="Забавная графика"> <strong>Забавная графика:</strong> Красивый и привлекательный интерфейс, который украсит ваш игровой процесс!</li>
+            <li><strong>Сохранение прогресса:</strong> Всегда сохраняйте свой прогресс и продолжайте играть. На случай если надо очистить прогресс всегда есть кнопка clean progress!</li>
         </ul>
 
         <h3>Готовы начать играть?</h3>
-        <a href="кликер.zip" class="button">скачать игру</a>
+        <a href="кликер.zip" class="button">Скачать игру</a>
     </div>
 </body>
 </html>

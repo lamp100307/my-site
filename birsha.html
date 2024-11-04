@@ -8,61 +8,86 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
             margin: 0;
             padding: 20px;
         }
         h1, h2, h3 {
-            color: #333;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для заголовков */
+            margin: 10px 0;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
         .button {
+            display: inline-block;
             background-color: #FF7761;
             color: white;
             padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 16px;
         }
         .button:hover {
             background-color: #FF5330;
+            transform: scale(1.05);
         }
         ul {
             padding-left: 20px;
+        }
+        li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .icon {
+            width: 78px; /* Увеличен размер иконок */
+            height: 48px; /* Увеличен размер иконок */
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .icon_btn {
+            width: 200px; /* Увеличен размер иконок */
+            height: 48px; /* Увеличен размер иконок */
+            margin-right: 10px;
+            flex-shrink: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Добро пожаловать в Симулятор Биржи!</h1>
-        <h1>Все что находиться дальше сгенерированно нейросетью</h1>
-        <h1>Эта игра НЕ ПРО НАСТОЯЩИЕ ДЕНЬГИ вывести свои бебракоины или деньги НЕ ПОЛУЧИТСЯ</h1>
+        <h2>Обратите внимание!</h2>
+        <h3>Эта игра НЕ ПРО НАСТОЯЩИЕ ДЕНЬГИ!</h3>
         <p>Погрузитесь в мир торговли криптовалютами и попробуйте заработать больше, чем ваши соперники!</p>
         
         <h2>Как играть:</h2>
         <ul>
-            <li><strong>Купить Bebracoin:</strong> Нажмите кнопку «Купить bebracoin», чтобы приобретать криптовалюту по текущему курсу.</li>
-            <li><strong>Продать Bebracoin:</strong> Нажмите кнопку «Продать bebracoin», чтобы продать вашу криптовалюту за деньги.</li>
-            <li><strong>Следите за курсом:</strong> Курс bebracoin обновляется каждые 2 секунды и зависим от случайных значений.</li>
-            <li><strong>Управляйте своими финансами:</strong> Следите за количеством своих bebracoins и деньгами, чтобы принимать верные решения.</li>
+            <li><img src="buy.png" class="icon_btn" alt="Купить"> <strong>Купить Bebracoin:</strong> Нажмите кнопку «Купить bebracoin», чтобы приобретать криптовалюту по текущему курсу.</li>
+            <li><img src="sell.png" class="icon_btn" alt="Продать"> <strong>Продать Bebracoin:</strong> Нажмите кнопку «Продать bebracoin», чтобы продать вашу криптовалюту за деньги.</li>
+            <li><img src="chart.png" class="icon" alt="Курс"> <strong>Следите за курсом:</strong> Курс bebracoin обновляется каждые 2 секунды и зависим от случайных значений.</li>
+            <li><img src="money.png" class="icon" alt="Финансы"> <strong>Управляйте своими финансами:</strong> Следите за количеством своих bebracoins и деньгами, чтобы принимать верные решения.</li>
         </ul>
 
         <h2>Особенности игры:</h2>
         <ul>
-            <li><strong>Интуитивно понятный интерфейс:</strong> Легко освоить, подходит для всех возрастов!</li>
-            <li><strong>Динамический график:</strong> Возможность отслеживания изменения курса в реальном времени.</li>
-            <li><strong>Случайные события:</strong> Каждый раз, когда вы обновляете курс, вы испытываете эмоции от того, какую прибыль или убытки вы можете получить!</li>
+            <li><img src="interface.png" class="icon" alt="Интерфейс"> <strong>Интуитивно понятный интерфейс:</strong> Легко освоить, подходит для всех возрастов!</li>
+            <li><img src="dynamic_chart.png" class="icon" alt="График"> <strong>Динамический график:</strong> Возможность отслеживания изменения курса в реальном времени.</li>
         </ul>
 
         <h3>Приготовьтесь к игре!</h3>
-        <a href="game.zip" class="button">скачать игру</a>
+        <a href="game.zip" class="button">Скачать игру</a>
     </div>
 </body>
 </html>
